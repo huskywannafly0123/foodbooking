@@ -1,8 +1,389 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+  ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US"  class="supernova">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="Pizza Order Form" >
+<meta property="og:description" content="Please click the link to complete this form." >
+<meta name="slack-app-id" content="AHNMASS8M">
+<script>
+        var favicon = document.querySelector('link[rel="shortcut icon"]');
+        window.isDarkMode = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if(favicon && window.isDarkMode) {
+            favicon.href = favicon.href.replaceAll('favicon-2021-light%402x.png', 'favicon-2021-dark%402x.png');
+        }
+    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+<meta name="HandheldFriendly" content="true" />
+<title>Pizza Order Form</title>
+@* <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style> *@
+<link type="text/css" rel="stylesheet" href="css/css1.css" />
+<link type="text/css" rel="stylesheet" href="css/css2.css" />
+<link type="text/css" rel="stylesheet" href="css/css3.css" />
+<link type="text/css" rel="stylesheet" href="css/css4.css" />
+<link type="text/css" rel="stylesheet" href="css/css5.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/js1.js" type="text/javascript"></script>
+<script src="js/js2.js" type="text/javascript"></script>
+<script src="js/js3.js" type="text/javascript"></script>
+<script defer src="js/js4.js" type="text/javascript"></script>
+<script defer src="js/js5.js" type="text/javascript"></script>
+<script defer src="js/js6.js"></script>
+<script src="js/js7.js"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+JotForm.extendsNewTheme = false;
+JotForm.singleProduct = false;
+JotForm.newPaymentUIForNewCreatedForms = false;
+JotForm.newPaymentUI = true;
+JotForm.clearFieldOnHide="disable";
+JotForm.submitError="jumpToFirstError";
+
+JotForm.init(function(){
+/*INIT-START*/
+    productID = {"0":"input_7_1001","1":"input_7_1002","2":"input_7_1007","3":"input_7_1008","4":"input_7_1005","5":"input_7_1006"};
+    paymentType = "product";
+    JotForm.setCurrencyFormat('USD',true, 'point');
+    JotForm.totalCounter({"input_7_1001":{"price":"15","quantityField":"input_7_quantity_1001_0","custom_1":"input_7_custom_1001_1","specialPriceField":"input_7_custom_1001_1","specialPriceList":["15","20","25"]},"input_7_1002":{"price":"13","quantityField":"input_7_quantity_1002_0","custom_1":"input_7_custom_1002_1","specialPriceField":"input_7_custom_1002_1","specialPriceList":["13","15","22"]},"input_7_1007":{"price":"15","quantityField":"input_7_quantity_1007_0","custom_1":"input_7_custom_1007_1","specialPriceField":"input_7_custom_1007_1","specialPriceList":["15","20","25"]},"input_7_1008":{"price":"14","quantityField":"input_7_quantity_1008_0","custom_1":"input_7_custom_1008_1","specialPriceField":"input_7_custom_1008_1","specialPriceList":["14","19","24"]},"input_7_1005":{"price":"8","quantityField":"input_7_quantity_1005_0","custom_1":"input_7_custom_1005_1"},"input_7_1006":{"price":"8","quantityField":"input_7_quantity_1006_0","custom_1":"input_7_custom_1006_1"}});
+    $$('.form-product-custom_quantity').each(function(el, i){el.observe('blur', function(){isNaN(this.value) || this.value < 1 ? this.value = '0' : this.value = parseInt(this.value)})});
+    $$('.form-product-custom_quantity').each(function(el, i){el.observe('focus', function(){this.value == 0 ? this.value = '' : this.value})});
+    JotForm.handleProductLightbox();
+    JotForm.paymentProperties = {"payLaterEnabled":"No","payLaterLayout":"text","payLaterLogoType":"inline","payLaterLogoPosition":"left","payLaterTextColor":"black","payLaterTextSize":"10","payLaterBackgroundColor":"blue","payLaterRatio":"20x1","paymentFormProperties":{"products":[{"connectedCategories":"[]","connectedProducts":"[]","customPrice":"","customPriceSource":"0","description":"Ingredients will be written  here.","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"1","icon":"","images":"[\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Fpizza-assortment-set_1284-20110.jpg\",\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Fpizza-assortment-set_1284-20110 copy 4.jpg\"]","name":"Pizza Neapolitan","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"0,0,0,0,0,0,0,0,0,0","expanded":false},{"type":"custom","name":"Size","properties":"Small\nMedium\nLarge","defaultQuantity":"","specialPricing":true,"expanded":false,"specialPrices":"15,20,25"}],"period":"Monthly","pid":"1001","price":"15","recurringtimes":"No Limit","required":"","setupfee":"","showSubtotal":"1","trial":""},{"connectedCategories":"[]","connectedProducts":"[]","customPrice":"","customPriceSource":"0","description":"Ingredients will be written  here.","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"1","icon":"","images":"[\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Fpizza-assortment-set_1284-20110 copy 2.jpg\",\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Fslices-pizza_23-2147517737 copy 3.jpg\"]","name":"Pizza Pepperoni","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"0,0,0,0,0,0,0,0,0,0","expanded":false},{"type":"custom","name":"Size","properties":"Small\nMedium\nLarge","defaultQuantity":"","specialPricing":true,"expanded":false,"specialPrices":"13,15,22"}],"period":"Monthly","pid":"1002","price":"13","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},{"connectedCategories":"[]","connectedProducts":"[]","customPrice":"","customPriceSource":"0","description":"Ingredients will be written  here.","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"1","icon":"","images":"[\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Fpizza-assortment-set_1284-20110 copy.jpg\",\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Fpizza-assortment-set_1284-20110 copy 3.jpg\"]","name":"Pizza Mare e Monti","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"0,0,0,0,0,0,0,0,0,0","expanded":false},{"type":"custom","name":"Size","properties":"Small\nMedium\nLarge","defaultQuantity":"","specialPricing":true,"expanded":false,"specialPrices":"15,20,25"}],"period":"Monthly","pid":"1007","price":"15","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"1","trial":""},{"connectedCategories":"[]","connectedProducts":"[]","customPrice":"","customPriceSource":"0","description":"Ingredients will be written  here.","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"1","icon":"","images":"[\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Fslices-pizza_23-2147517737 copy 4.jpg\"]","name":"Pizza Supreme","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"0,0,0,0,0,0,0,0,0,0","expanded":false},{"type":"custom","name":"Size","properties":"Small\nMedium\nLarge","defaultQuantity":"","specialPricing":true,"expanded":false,"specialPrices":"14,19,24"}],"period":"Monthly","pid":"1008","price":"14","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"1","trial":""},{"connectedCategories":"[]","connectedProducts":"[]","customPrice":"","customPriceSource":"0","description":"Ingredients will be written  here.","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Ftransparent-plastic-glass-drink-juice-with-straw_1284-32543.jpg\"]","name":"Orange Juice","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"0,0,0,0,0,0,0,0,0,0","expanded":false},{"type":"custom","name":"Extra","properties":"None\nExtra Ice","defaultQuantity":"","specialPricing":false,"expanded":false,"specialPrices":""}],"period":"Monthly","pid":"1005","price":"8","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},{"connectedCategories":"[]","connectedProducts":"[]","customPrice":"","customPriceSource":"0","description":"Ingredients will be written  here.","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Flemon-lime-lemonade-lemonade-green-illustration_1416-918.jpg\",\"https:\u002F\u002Fwww.jotform.com\u002Fuploads\u002FLaurelWood\u002Fform_files\u002Flemon-lime-lemonade-lemonade-green-illustration_1416-918 copy.jpg\"]","name":"Lemonade","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"0,0,0,0,0,0,0,0,0,0","expanded":false},{"type":"custom","name":"Options","properties":"Normal\nPink","defaultQuantity":"","specialPricing":false,"expanded":false,"specialPrices":""}],"period":"Monthly","pid":"1006","price":"8","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""}]}}
+
+JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+JotForm.calendarOther = {"today":"Today"};
+var languageOptions = document.querySelectorAll('#langList li'); 
+for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+ languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("5", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); }, 0); });
+} 
+JotForm.onTranslationsFetch(function() { JotForm.setCalendar("5", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); });
+JotForm.formatDate({date:(new Date()), dateField:$("id_"+5)});
+    JotForm.displayLocalTime("input_6_hourSelect", "input_6_minuteSelect","input_6_ampm", "input_6_timeInput", true);
+    JotForm.setPhoneMaskingValidator( 'input_11_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);
+    JotForm.alterTexts(undefined);
+    JotForm.alterTexts(undefined, true);
+/*INIT-END*/
+});
+
+ JotForm.prepareCalculationsOnTheFly([null,{"name":"pizzaOrder","qid":"1","text":"Pizza Order Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Order","type":"control_button"},{"name":"name","qid":"3","text":"Name","type":"control_fullname"},null,{"name":"pickupDate","qid":"5","text":"Pickup Date","type":"control_datetime"},{"name":"pickupTime","qid":"6","text":"Pickup Time","type":"control_time"},{"name":"menu","qid":"7","text":"Menu","type":"control_paypalSPB"},{"name":"additionalNotes","qid":"8","text":"Additional Notes","type":"control_textarea"},null,null,{"name":"phoneNumber","qid":"11","text":"Phone Number","type":"control_phone"},{"name":"email","qid":"12","subLabel":"example@example.com","text":"Email","type":"control_email"}]);
+ setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"pizzaOrder","qid":"1","text":"Pizza Order Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Order","type":"control_button"},{"name":"name","qid":"3","text":"Name","type":"control_fullname"},null,{"name":"pickupDate","qid":"5","text":"Pickup Date","type":"control_datetime"},{"name":"pickupTime","qid":"6","text":"Pickup Time","type":"control_time"},{"name":"menu","qid":"7","text":"Menu","type":"control_paypalSPB"},{"name":"additionalNotes","qid":"8","text":"Additional Notes","type":"control_textarea"},null,null,{"name":"phoneNumber","qid":"11","text":"Phone Number","type":"control_phone"},{"name":"email","qid":"12","subLabel":"example@example.com","text":"Email","type":"control_email"}]);}, 20); 
+</script>
+</head>
+<body>
+<form class="jotform-form" action="https://submit.jotform.com/submit/231913363661455" method="post" name="form_231913363661455" id="231913363661455" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="231913363661455" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+<div role="main" class="form-all">
+  <ul class="form-section page-section">
+    <li id="cid_1" class="form-input-wide" data-type="control_head">
+      <div style="display:table;width:100%">
+        <div class="form-header-group hasImage header-large" data-imagealign="Top">
+          <div class="header-logo"><img src="img/logo.png" alt="Pizza Order Form" width="319" class="header-logo-top" /></div>
+          <div class="header-text httac htvam">
+            <h1 id="header_1" class="form-header" data-component="header">Pizza Order Form</h1>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="form-line" data-type="control_paypalSPB" id="id_7" data-payment="true"><label class="form-label form-label-top" id="label_7" for="input_7"> Menu </label>
+      <div id="cid_7" class="form-input-wide" data-layout="full">
+        <div>
+          <div data-wrapper-react="true" class="product-container-wrapper">
+            <div class="filter-container"></div><input type="hidden" id="use_paypal_button" /><input type="hidden" name="simple_fpc" data-payment_type="paypalSPB" data-component="payment1" value="7" /><input type="hidden" name="payment_transaction_uuid" id="paymentTransactionId" /><input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+            <div id="image-overlay" class="overlay-content" style="display:none"><img id="current-image" /><span class="lb-prev-button">prev</span><span class="lb-next-button">next</span><span class="lb-close-button">( X )</span><span class="image-overlay-product-container">
+                <ul class="form-overlay-item" pid="1001" hasicon="false" hasimages="true" iconvalue="">
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/pizza-assortment-set_1284-20110.jpg" /></li>
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/pizza-assortment-set_1284-20110 copy 4.jpg" /></li>
+                </ul>
+                <ul class="form-overlay-item" pid="1002" hasicon="false" hasimages="true" iconvalue="">
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/pizza-assortment-set_1284-20110 copy 2.jpg" /></li>
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/slices-pizza_23-2147517737 copy 3.jpg" /></li>
+                </ul>
+                <ul class="form-overlay-item" pid="1007" hasicon="false" hasimages="true" iconvalue="">
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/pizza-assortment-set_1284-20110 copy.jpg" /></li>
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/pizza-assortment-set_1284-20110 copy 3.jpg" /></li>
+                </ul>
+                <ul class="form-overlay-item" pid="1008" hasicon="false" hasimages="true" iconvalue="">
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/slices-pizza_23-2147517737 copy 4.jpg" /></li>
+                </ul>
+                <ul class="form-overlay-item" pid="1005" hasicon="false" hasimages="true" iconvalue="">
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/transparent-plastic-glass-drink-juice-with-straw_1284-32543.jpg" /></li>
+                </ul>
+                <ul class="form-overlay-item" pid="1006" hasicon="false" hasimages="true" iconvalue="">
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/lemon-lime-lemonade-lemonade-green-illustration_1416-918.jpg" /></li>
+                  <li class="image-overlay-image"><img loading="lazy" src="https://www.jotform.com/uploads/LaurelWood/form_files/lemon-lime-lemonade-lemonade-green-illustration_1416-918 copy.jpg" /></li>
+                </ul>
+              </span></div>
+            <div data-wrapper-react="true"><span class="form-product-item hover-product-item  show_image show_desc show_option show_subtotal new_ui" categories="non-categorized" pid="1001" aria-labelledby="label_7">
+                <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                  <div class="p_col">
+                    <div class="p_checkbox"><input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1001" name="q7_menu[][id]" value="1001" aria-label="Select Product: Pizza Neapolitan" />
+                      <div class="checked"></div>
+                      <div class="select_border"></div>
+                    </div>
+                  </div>
+                  <div class="p_image">
+                    <div class="image_area form-product-image-with-options">
+                      <div style="position:absolute;width:100%;height:100%"><img role="img" aria-label="Pizza Neapolitan" alt="Pizza Neapolitan Product Image" style="width:100%;height:100%;object-fit:cover" src="https://www.jotform.com/uploads/LaurelWood/form_files/pizza-assortment-set_1284-20110.jpg" loading="lazy" /></div>
+                      <div class="image_zoom"></div>
+                    </div>
+                  </div>
+                  <div for="input_7_1001" class="form-product-container"><span data-wrapper-react="true">
+                      <div class="title_description"><span class="form-product-name" id="product-name-input_7_1001">Pizza Neapolitan</span><span class="form-product-description" id="product-name-description-input_7_1001">Ingredients will be written here.</span></div><span class="form-product-details"><b><span data-wrapper-react="true">$<span id="input_7_1001_price">15.00</span></span></b></span>
+                    </span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_quantity_1001_0" style="min-height:13px" aria-hidden="false">Quantity</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1001][item_0]" id="input_7_quantity_1001_0" aria-label="Select Quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select></span></span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_custom_1001_1" style="min-height:13px" aria-hidden="false">Size</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1001][item_1]" id="input_7_custom_1001_1" aria-label="Select Size">
+                          <option value="Small">Small</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Large">Large</option>
+                        </select></span></span><br /><span class="form-special-subtotal"><span class="form-item-subtotal">Item subtotal:</span><span data-wrapper-react="true">$<span id="input_7_1001_item_subtotal">0.00</span></span></span></div>
+                  <div class="focus_action_button_container"><a class="btn-inline-product-delete"> </a><a class="btn-inline-product-settings"> </a></div>
+                </div>
+              </span>
+              <div class="p_item_separator "></div><span class="form-product-item hover-product-item  show_image show_desc show_option new_ui" categories="non-categorized" pid="1002" aria-labelledby="label_7">
+                <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                  <div class="p_col">
+                    <div class="p_checkbox"><input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1002" name="q7_menu[][id]" value="1002" aria-label="Select Product: Pizza Pepperoni" />
+                      <div class="checked"></div>
+                      <div class="select_border"></div>
+                    </div>
+                  </div>
+                  <div class="p_image">
+                    <div class="image_area form-product-image-with-options">
+                      <div style="position:absolute;width:100%;height:100%"><img role="img" aria-label="Pizza Pepperoni" alt="Pizza Pepperoni Product Image" style="width:100%;height:100%;object-fit:cover" src="https://www.jotform.com/uploads/LaurelWood/form_files/pizza-assortment-set_1284-20110%20copy%202.jpg" loading="lazy" /></div>
+                      <div class="image_zoom"></div>
+                    </div>
+                  </div>
+                  <div for="input_7_1002" class="form-product-container"><span data-wrapper-react="true">
+                      <div class="title_description"><span class="form-product-name" id="product-name-input_7_1002">Pizza Pepperoni</span><span class="form-product-description" id="product-name-description-input_7_1002">Ingredients will be written here.</span></div><span class="form-product-details"><b><span data-wrapper-react="true">$<span id="input_7_1002_price">13.00</span></span></b></span>
+                    </span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_quantity_1002_0" style="min-height:13px" aria-hidden="false">Quantity</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1002][item_0]" id="input_7_quantity_1002_0" aria-label="Select Quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select></span></span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_custom_1002_1" style="min-height:13px" aria-hidden="false">Size</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1002][item_1]" id="input_7_custom_1002_1" aria-label="Select Size">
+                          <option value="Small">Small</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Large">Large</option>
+                        </select></span></span></div>
+                  <div class="focus_action_button_container"><a class="btn-inline-product-delete"> </a><a class="btn-inline-product-settings"> </a></div>
+                </div>
+              </span>
+              <div class="p_item_separator "></div><span class="form-product-item hover-product-item  show_image show_desc show_option show_subtotal new_ui" categories="non-categorized" pid="1007" aria-labelledby="label_7">
+                <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                  <div class="p_col">
+                    <div class="p_checkbox"><input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1007" name="q7_menu[][id]" value="1007" aria-label="Select Product: Pizza Mare e Monti" />
+                      <div class="checked"></div>
+                      <div class="select_border"></div>
+                    </div>
+                  </div>
+                  <div class="p_image">
+                    <div class="image_area form-product-image-with-options">
+                      <div style="position:absolute;width:100%;height:100%"><img role="img" aria-label="Pizza Mare e Monti" alt="Pizza Mare e Monti Product Image" style="width:100%;height:100%;object-fit:cover" src="https://www.jotform.com/uploads/LaurelWood/form_files/pizza-assortment-set_1284-20110%20copy.jpg" loading="lazy" /></div>
+                      <div class="image_zoom"></div>
+                    </div>
+                  </div>
+                  <div for="input_7_1007" class="form-product-container"><span data-wrapper-react="true">
+                      <div class="title_description"><span class="form-product-name" id="product-name-input_7_1007">Pizza Mare e Monti</span><span class="form-product-description" id="product-name-description-input_7_1007">Ingredients will be written here.</span></div><span class="form-product-details"><b><span data-wrapper-react="true">$<span id="input_7_1007_price">15.00</span></span></b></span>
+                    </span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_quantity_1007_0" style="min-height:13px" aria-hidden="false">Quantity</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1007][item_0]" id="input_7_quantity_1007_0" aria-label="Select Quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select></span></span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_custom_1007_1" style="min-height:13px" aria-hidden="false">Size</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1007][item_1]" id="input_7_custom_1007_1" aria-label="Select Size">
+                          <option value="Small">Small</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Large">Large</option>
+                        </select></span></span><br /><span class="form-special-subtotal"><span class="form-item-subtotal">Item subtotal:</span><span data-wrapper-react="true">$<span id="input_7_1007_item_subtotal">0.00</span></span></span></div>
+                  <div class="focus_action_button_container"><a class="btn-inline-product-delete"> </a><a class="btn-inline-product-settings"> </a></div>
+                </div>
+              </span>
+              <div class="p_item_separator "></div><span class="form-product-item hover-product-item  show_image show_desc show_option show_subtotal new_ui" categories="non-categorized" pid="1008" aria-labelledby="label_7">
+                <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                  <div class="p_col">
+                    <div class="p_checkbox"><input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1008" name="q7_menu[][id]" value="1008" aria-label="Select Product: Pizza Supreme" />
+                      <div class="checked"></div>
+                      <div class="select_border"></div>
+                    </div>
+                  </div>
+                  <div class="p_image">
+                    <div class="image_area form-product-image-with-options">
+                      <div style="position:absolute;width:100%;height:100%"><img role="img" aria-label="Pizza Supreme" alt="Pizza Supreme Product Image" style="width:100%;height:100%;object-fit:cover" src="https://www.jotform.com/uploads/LaurelWood/form_files/slices-pizza_23-2147517737%20copy%204.jpg" loading="lazy" /></div>
+                      <div class="image_zoom"></div>
+                    </div>
+                  </div>
+                  <div for="input_7_1008" class="form-product-container"><span data-wrapper-react="true">
+                      <div class="title_description"><span class="form-product-name" id="product-name-input_7_1008">Pizza Supreme</span><span class="form-product-description" id="product-name-description-input_7_1008">Ingredients will be written here.</span></div><span class="form-product-details"><b><span data-wrapper-react="true">$<span id="input_7_1008_price">14.00</span></span></b></span>
+                    </span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_quantity_1008_0" style="min-height:13px" aria-hidden="false">Quantity</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1008][item_0]" id="input_7_quantity_1008_0" aria-label="Select Quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select></span></span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_custom_1008_1" style="min-height:13px" aria-hidden="false">Size</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1008][item_1]" id="input_7_custom_1008_1" aria-label="Select Size">
+                          <option value="Small">Small</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Large">Large</option>
+                        </select></span></span><br /><span class="form-special-subtotal"><span class="form-item-subtotal">Item subtotal:</span><span data-wrapper-react="true">$<span id="input_7_1008_item_subtotal">0.00</span></span></span></div>
+                  <div class="focus_action_button_container"><a class="btn-inline-product-delete"> </a><a class="btn-inline-product-settings"> </a></div>
+                </div>
+              </span>
+              <div class="p_item_separator "></div><span class="form-product-item hover-product-item  show_image show_desc show_option new_ui" categories="non-categorized" pid="1005" aria-labelledby="label_7">
+                <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                  <div class="p_col">
+                    <div class="p_checkbox"><input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1005" name="q7_menu[][id]" value="1005" aria-label="Select Product: Orange Juice" />
+                      <div class="checked"></div>
+                      <div class="select_border"></div>
+                    </div>
+                  </div>
+                  <div class="p_image">
+                    <div class="image_area form-product-image-with-options">
+                      <div style="position:absolute;width:100%;height:100%"><img role="img" aria-label="Orange Juice" alt="Orange Juice Product Image" style="width:100%;height:100%;object-fit:cover" src="https://www.jotform.com/uploads/LaurelWood/form_files/transparent-plastic-glass-drink-juice-with-straw_1284-32543.jpg" loading="lazy" /></div>
+                      <div class="image_zoom"></div>
+                    </div>
+                  </div>
+                  <div for="input_7_1005" class="form-product-container"><span data-wrapper-react="true">
+                      <div class="title_description"><span class="form-product-name" id="product-name-input_7_1005">Orange Juice</span><span class="form-product-description" id="product-name-description-input_7_1005">Ingredients will be written here.</span></div><span class="form-product-details"><b><span data-wrapper-react="true">$<span id="input_7_1005_price">8.00</span></span></b></span>
+                    </span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_quantity_1005_0" style="min-height:13px" aria-hidden="false">Quantity</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1005][item_0]" id="input_7_quantity_1005_0" aria-label="Select Quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select></span></span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_custom_1005_1" style="min-height:13px" aria-hidden="false">Extra</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1005][item_1]" id="input_7_custom_1005_1" aria-label="Select Extra">
+                          <option value="None">None</option>
+                          <option value="Extra Ice">Extra Ice</option>
+                        </select></span></span></div>
+                  <div class="focus_action_button_container"><a class="btn-inline-product-delete"> </a><a class="btn-inline-product-settings"> </a></div>
+                </div>
+              </span>
+              <div class="p_item_separator "></div><span class="form-product-item hover-product-item  show_image show_desc show_option new_ui" categories="non-categorized" pid="1006" aria-labelledby="label_7">
+                <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                  <div class="p_col">
+                    <div class="p_checkbox"><input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1006" name="q7_menu[][id]" value="1006" aria-label="Select Product: Lemonade" />
+                      <div class="checked"></div>
+                      <div class="select_border"></div>
+                    </div>
+                  </div>
+                  <div class="p_image">
+                    <div class="image_area form-product-image-with-options">
+                      <div style="position:absolute;width:100%;height:100%"><img role="img" aria-label="Lemonade" alt="Lemonade Product Image" style="width:100%;height:100%;object-fit:cover" src="https://www.jotform.com/uploads/LaurelWood/form_files/lemon-lime-lemonade-lemonade-green-illustration_1416-918.jpg" loading="lazy" /></div>
+                      <div class="image_zoom"></div>
+                    </div>
+                  </div>
+                  <div for="input_7_1006" class="form-product-container"><span data-wrapper-react="true">
+                      <div class="title_description"><span class="form-product-name" id="product-name-input_7_1006">Lemonade</span><span class="form-product-description" id="product-name-description-input_7_1006">Ingredients will be written here.</span></div><span class="form-product-details"><b><span data-wrapper-react="true">$<span id="input_7_1006_price">8.00</span></span></b></span>
+                    </span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_quantity_1006_0" style="min-height:13px" aria-hidden="false">Quantity</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1006][item_0]" id="input_7_quantity_1006_0" aria-label="Select Quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select></span></span><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_7_custom_1006_1" style="min-height:13px" aria-hidden="false">Options</label><span class="select_cont"><select class="form-dropdown" name="q7_menu[special_1006][item_1]" id="input_7_custom_1006_1" aria-label="Select Options">
+                          <option value="Normal">Normal</option>
+                          <option value="Pink">Pink</option>
+                        </select></span></span></div>
+                  <div class="focus_action_button_container"><a class="btn-inline-product-delete"> </a><a class="btn-inline-product-settings"> </a></div>
+                </div>
+              </span>
+              <div class="payment_footer new_ui ">
+                <div class="total_area">
+                  <div class="form-payment-total">
+                    <div id="total-text">Total</div>
+                    <div class="form-payment-price"><span data-wrapper-react="true">$<span id="payment_total">0.00</span></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><input type="text" name="cc_paypalSPB_orderID" id="cc_paypalSPB_orderID" class="form-textbox" readonly="" aria-label="PayPal Checkout Buttons" tabindex="-1" style="opacity:0;z-index:-1;pointer-events:none;position:absolute;width:0;height:0;left:-400px;top:-400px;padding:0;border:none;margin:0" /><input type="text" name="cc_paypalSPB_payerID" id="cc_paypalSPB_payerID" class="form-textbox" readonly="" aria-label="PayPal Checkout Buttons" tabindex="-1" style="opacity:0;z-index:-1;pointer-events:none;position:absolute;width:0;height:0;left:-400px;top:-400px;padding:0;border:none;margin:0" />
+          <div class="complete-payment-prompt" style="display:none">The payment is ready! It will be completed once you submit the form.</div>
+        </div>
+      </div>
+    </li>
+    <li class="form-line" data-type="control_button" id="id_2">
+      <div id="cid_2" class="form-input-wide" data-layout="full">
+        <div data-align="center" class="form-buttons-wrapper form-buttons-center paypal-submit-container  jsTest-button-wrapperField">
+          <div class="paypal-submit-button-wrapper"></div>
+          <div class="paypal-paylater-messages" style="order:2;width:100%;display:block">
+            <div class="message-area"></div>
+          </div>
+          <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+            <img src="https://cdn.divineshop.vn/static/b77a2122717d76696bd2b87d7125fd47.svg" alt="Payment using momo" class="icon-image"> Momo Payment
+        </button>
+        
+        <button id="input_3" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+          <img src="https://cdn.divineshop.vn/static/ed4044413ba8489903d4f27bac88aa02.svg" alt="Payment using mobile banking" class="icon-image"> Mobile Banking
+      </button>
+          
+        </div>
+      </div>
+    </li>
+    <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+  </ul>
 </div>
+<script>
+  JotForm.showJotFormPowered = "new_footer";
+</script>
+<script>
+  JotForm.poweredByText = "Powered by Jotform";
+</script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="231913363661455" />
+<script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='231913363661455'] .si" + "mple" + "_spc");
+  for (var i = 0; i < all_spc.length; i++)
+  {
+    all_spc[i].value = "231913363661455-231913363661455";
+  }
+</script>
+<script>
+  $(document).ready(function() {
+      $('#showQrButton').click(function() {
+          $('#qrCode').toggle();
+      });
+  });
+</script>
+</div>
+</form>
+
+</body>
+</html><script type="text/javascript">JotForm.ownerView=true;</script><script src="js/js8.js"></script>
+<script src="js/js9.js"></script>
+
