@@ -1,7 +1,4 @@
-﻿@model FoodItemModel
-@{
-  ViewData["Title"] = "Home Page";
-}
+﻿@model FoodItemViewModel
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en-US"  class="supernova">
@@ -20,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
 <meta name="HandheldFriendly" content="true" />
 <title>Pizza Order Form</title>
-@* <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style> *@
+  @* <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style> *@
 <link type="text/css" rel="stylesheet" href="css/css1.css" />
 <link type="text/css" rel="stylesheet" href="css/css2.css" />
 <link type="text/css" rel="stylesheet" href="css/css3.css" />
@@ -44,6 +41,7 @@ JotForm.submitError="jumpToFirstError";
 
 JotForm.init(function(){
 /*INIT-START*/
+    @Model.
     productID = {"0":"input_7_1001","1":"input_7_1002","2":"input_7_1007","3":"input_7_1008","4":"input_7_1005","5":"input_7_1006"};
     paymentType = "product";
     JotForm.setCurrencyFormat('USD',true, 'point');
@@ -347,14 +345,14 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"pizzaOrder","qid":"1","text":"Pizza
           <div class="paypal-paylater-messages" style="order:2;width:100%;display:block">
             <div class="message-area"></div>
           </div>
-          <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
-            <img src="https://cdn.divineshop.vn/static/b77a2122717d76696bd2b87d7125fd47.svg" alt="Payment using momo" class="icon-image"> Momo Payment
+            <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              <img src="https://cdn.divineshop.vn/static/b77a2122717d76696bd2b87d7125fd47.svg" alt="Payment using momo" class="icon-image"> Momo Payment
+          </button>
+
+          <button id="input_3" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+            <img src="https://cdn.divineshop.vn/static/ed4044413ba8489903d4f27bac88aa02.svg" alt="Payment using mobile banking" class="icon-image"> Mobile Banking
         </button>
-        
-        <button id="input_3" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
-          <img src="https://cdn.divineshop.vn/static/ed4044413ba8489903d4f27bac88aa02.svg" alt="Payment using mobile banking" class="icon-image"> Mobile Banking
-      </button>
-          
+
         </div>
       </div>
     </li>

@@ -10,7 +10,8 @@ namespace foodbooking.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    const string SPREADSHEET_ID = "1QKggcbsR8yrzDVsl7qqsjPI3fOWSNtANnywBqVGMLaU";
+    const string SPREADSHEET_ID = "1TEBUcuCy7vIeNB60p3I1HF2SlKk5-IPBMHa2kOfGrhY";
+    
     const string SHEET_NAME = "Food";
     SpreadsheetsResource.ValuesResource _googleSheetValues;
 
@@ -26,7 +27,8 @@ public class HomeController : Controller
         var request = _googleSheetValues.Get(SPREADSHEET_ID, range);
         var response = request.Execute();
         var values = response.Values;
-        return View(FoodItemsMapper.MapFromRangeData(values));
+        FoodItemViewModel foodItems = new FoodItemViewModel(FoodItemsMapper.MapFromRangeData(values));
+        return View(foodItems);
     }
 
     public IActionResult Privacy()

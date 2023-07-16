@@ -1,7 +1,15 @@
 using foodbooking.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+    });
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton(typeof(GoogleSheetsHelper));
@@ -21,6 +29,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseCors("AllowAll");
 
 app.MapControllerRoute(
     name: "default",
